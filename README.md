@@ -22,3 +22,10 @@ composer install
 ```bash
 php artisan test
 ```
+
+### 5. 使用方式
+- method: GET
+- route: /api/currency/convert
+- params: source(原貨幣), target(指定貨幣), amount(原貨幣金額)
+- example: /api/currency/convert?source=USD&target=TWD&amount=100
+- response: {"msg": "success", "amount": "33.79"}
